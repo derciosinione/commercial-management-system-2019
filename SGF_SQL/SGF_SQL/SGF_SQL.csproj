@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F36C160C-0E23-47A5-B811-69180E692BC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGF_SQL</RootNamespace>
+    <AssemblyName>SGF_SQL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_Hub.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\csForm.cs" />
+    <Compile Include="Classes\csRestricoes.cs" />
+    <Compile Include="Classes\cssConvFoto.cs" />
+    <Compile Include="db_comercialDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_comercialDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_estatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_estatistica.Designer.cs">
+      <DependentUpon>fn_estatistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_faturaVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_faturaVenda.Designer.cs">
+      <DependentUpon>fn_faturaVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_sistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_sistema.Designer.cs">
+      <DependentUpon>fn_sistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_perfil.Designer.cs">
+      <DependentUpon>fn_perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_cargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_cargos.Designer.cs">
+      <DependentUpon>fn_cargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_escala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_escala.Designer.cs">
+      <DependentUpon>fn_escala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_funcionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_funcionarios.Designer.cs">
+      <DependentUpon>fn_funcionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_newFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\fn_newFuncionarios.Designer.cs">
+      <DependentUpon>fn_newFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Vendas\fn_consultar_produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Vendas\fn_consultar_produto.Designer.cs">
+      <DependentUpon>fn_consultar_produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Vendas\fn_vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Vendas\fn_vendas.Designer.cs">
+      <DependentUpon>fn_vendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Produtos\fn_categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Produtos\fn_categorias.Designer.cs">
+      <DependentUpon>fn_categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_login.Designer.cs">
+      <DependentUpon>fn_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_menu.Designer.cs">
+      <DependentUpon>fn_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_Opacity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_Opacity.Designer.cs">
+      <DependentUpon>fn_Opacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Produtos\fn_produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Produtos\fn_produtos.Designer.cs">
+      <DependentUpon>fn_produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Produtos\fn_Pr_inform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Produtos\fn_Pr_inform.Designer.cs">
+      <DependentUpon>fn_Pr_inform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Geral\fn_splash.Designer.cs">
+      <DependentUpon>fn_splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Produtos\fn_sub_produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Produtos\fn_sub_produtos.Designer.cs">
+      <DependentUpon>fn_sub_produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Produtos\user_prEntradas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Produtos\user_prEntradas.Designer.cs">
+      <DependentUpon>user_prEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Produtos\user_prNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Produtos\user_prNew.Designer.cs">
+      <DependentUpon>user_prNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Vendas\userVendas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Vendas\userVendas.Designer.cs">
+      <DependentUpon>userVendas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Geral\fn_estatistica.resx">
+      <DependentUpon>fn_estatistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Geral\fn_faturaVenda.resx">
+      <DependentUpon>fn_faturaVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Geral\fn_sistema.resx">
+      <DependentUpon>fn_sistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Funcionarios\fn_perfil.resx">
+      <DependentUpon>fn_perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Funcionarios\fn_cargos.resx">
+      <DependentUpon>fn_cargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Funcionarios\fn_escala.resx">
+      <DependentUpon>fn_escala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Funcionarios\fn_funcionarios.resx">
+      <DependentUpon>fn_funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Funcionarios\fn_newFuncionarios.resx">
+      <DependentUpon>fn_newFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Vendas\fn_consultar_produto.resx">
+      <DependentUpon>fn_consultar_produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Vendas\fn_vendas.resx">
+      <DependentUpon>fn_vendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\fn_categorias.resx">
+      <DependentUpon>fn_categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Geral\fn_login.resx">
+      <DependentUpon>fn_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Geral\fn_menu.resx">
+      <DependentUpon>fn_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Geral\fn_Opacity.resx">
+      <DependentUpon>fn_Opacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\fn_produtos.resx">
+      <DependentUpon>fn_produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\fn_Pr_inform.resx">
+      <DependentUpon>fn_Pr_inform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Geral\fn_splash.resx">
+      <DependentUpon>fn_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\fn_sub_produtos.resx">
+      <DependentUpon>fn_sub_produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Produtos\user_prEntradas.resx">
+      <DependentUpon>user_prEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\user_prNew.resx">
+      <DependentUpon>user_prNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Vendas\userVendas.resx">
+      <DependentUpon>userVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roport\rp_funcionarios.rdlc" />
+    <EmbeddedResource Include="Roport\rp_produtos.rdlc" />
+    <EmbeddedResource Include="Roport\rp_produtos_entrada.rdlc" />
+    <EmbeddedResource Include="Roport\rp_produtos_fatura.rdlc" />
+    <EmbeddedResource Include="rp_fatura.rdlc" />
+    <None Include="db_comercialDataSet.xsc">
+      <DependentUpon>db_comercialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_comercialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_comercialDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_comercialDataSet.xss">
+      <DependentUpon>db_comercialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restart_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Edit_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash Can_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping Cart Loaded_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elective_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enter_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add File_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_64pxs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Show Property_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_64pxs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_64pxs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{e96a930e-fbef-47a8-bae9-427d23b83894}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward Arrow_50pxk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Service_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Organization_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Toggle_Off_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Toggle_On_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Data_Backup_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Services_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_User_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Notification_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Increase_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Truck_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Category_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Service_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_Hub.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
