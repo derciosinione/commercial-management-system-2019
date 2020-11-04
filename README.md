@@ -1,4 +1,4 @@
-# Church_managment       
+# Commercial Management System       
 
 This project was made by me in 2019, it is a commercial management system.
 
