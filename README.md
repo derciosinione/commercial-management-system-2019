@@ -19,23 +19,23 @@ This project was made by me in 2019, it is a commercial management system.
 
 
 ## Screenshots
-<p><img src="Screenshots/Captura%20de%20Tela%20(131).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(132).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(133).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(134).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(135).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(136).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(137).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(139).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(140).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(143).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(144).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(145).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(146).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(147).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(150).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(152).png" height="300" width="600"></p>
-<p><img src="Screenshots/Captura%20de%20Tela%20(153).png" height="300" width="600"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(131).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(132).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(133).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(134).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(135).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(136).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(137).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(139).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(140).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(143).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(144).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(145).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(146).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(147).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(150).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(152).png" height="400" width="800"></p>
+<p><img src="Screenshots/Captura%20de%20Tela%20(153).png" height="400" width="800"></p>
 
 
 # Support :
